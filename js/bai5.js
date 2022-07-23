@@ -12,7 +12,7 @@ function ngayHomQua() {
             console.log("31/12/" + nam);
             document.getElementById("ngayThangNam").innerHTML = "<p>Ngày 31 tháng 12 năm " + nam + "</p>"
         } else if (ngay === 1) {
-            if (thang === 2 || thang === 4 || thang === 6 || thang === 9 || thang === 11) {
+            if (thang === 2 || thang === 4 || thang === 6 || thang === 8 || thang === 9 || thang === 11) {
                 thang--;
                 console.log("31/" + thang + "/" + nam);
                 document.getElementById("ngayThangNam").innerHTML = "<p>Ngày 31 tháng " + thang + " năm " + nam + "</p>"
@@ -63,7 +63,7 @@ function ngayMai() {
             if (ngay === 31) {
                 thang++;
                 console.log("1/" + thang + "/" + nam);
-                document.getElementById("ngayThangNam").innerHTML = "<p>Ngày " + ngay + " tháng " + thang + " năm " + nam + "</p>"
+                document.getElementById("ngayThangNam").innerHTML = "<p>Ngày 1 tháng " + thang + " năm " + nam + "</p>"
             }
         }
     } else {
